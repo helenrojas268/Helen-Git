@@ -1,0 +1,23 @@
+
+function agregar(valor) {
+    document.getElementById('resultado').value += valor;
+}
+
+function operacion(operador) {
+    document.getElementById('resultado').value += operador;
+}
+
+function calcular() {
+    var resultado = eval(document.getElementById('resultado').value);
+    document.getElementById('resultado').value = resultado;
+}
+
+function limpiar() {
+    document.getElementById('resultado').value = "";
+}
+
+function eliminar() {
+    var resultado = document.getElementById('resultado').value;
+    document.getElementById('resultado').value = resultado.slice(0, -1);
+}
+
